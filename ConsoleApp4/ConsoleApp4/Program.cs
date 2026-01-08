@@ -28,7 +28,7 @@ namespace ConsoleApp4
             //string binaryInput = Console.ReadLine();
             //int decimalValue = Convert.ToInt32(binaryInput, 2); // 2진수 -> 10진수 변환
 
-            //정수를 이진수로 변환
+            ////정수를 이진수로 변환
             //string binaryOutput = Convert.ToString(decimalValue, 2);
 
             //Console.WriteLine($"입력한 이진수 : {binaryInput}");
@@ -89,7 +89,7 @@ namespace ConsoleApp4
             //Console.WriteLine($"double : {pi}");
             //Console.WriteLine($"int로 변환 : {intPi}");
 
-            //3. 문자열을 숫자로 변환
+            //3.문자열을 숫자로 변환
             //string scoreText = "95";
             //int score = int.Parse(scoreText); // 문자열 -> 정수
 
@@ -274,37 +274,37 @@ namespace ConsoleApp4
             //Console.WriteLine(a || b);
 
             //!
-            //bool a = false;
+            bool a = false;
 
-            //Console.WriteLine(!a);
+            Console.WriteLine(!a);
 
             // 8비트 = 1바이트
-            //int x = 5; // 0101 // int는 4바이트이므로 총 4 * 8 = 32 비트 
-            //int y = 3; // 0011
+            int x = 5; // 0101 // int는 4바이트이므로 총 4 * 8 = 32 비트 
+            int y = 3; // 0011
 
             //비트 AND
-            //string binary = Convert.ToString(x & y, 2);  // 두 비트가 1로 동일하면 하나라도 다르면 0
-            //Console.WriteLine($"8비트 : {binary.PadLeft(8, '0')}");
+            string binary = Convert.ToString(x & y, 2);  // 두 비트가 1로 동일하면 하나라도 다르면 0
+            Console.WriteLine($"8비트 : {binary.PadLeft(8, '0')}");
 
             //비트 OR
-            //binary = Convert.ToString(x | y, 2);  // 둘중에 하나가 1이라면 1 둘 다 0이면 0
-            //Console.WriteLine($"8비트 : {binary.PadLeft(8, '0')}");
+            binary = Convert.ToString(x | y, 2);  // 둘중에 하나가 1이라면 1 둘 다 0이면 0
+            Console.WriteLine($"8비트 : {binary.PadLeft(8, '0')}");
 
             //비트 XOR
-            //binary = Convert.ToString(x ^ y, 2); // 두 비트 같으면 0 다르면 1  
-            //Console.WriteLine($"8비트 : {binary.PadLeft(8, '0')}");
+            binary = Convert.ToString(x ^ y, 2); // 두 비트 같으면 0 다르면 1  
+            Console.WriteLine($"8비트 : {binary.PadLeft(8, '0')}");
 
             //비트 NOT
-            //binary = Convert.ToString(~x, 2); // 비트의 반대 0 -> 1, 1 -> 0
-            //Console.WriteLine($"8비트 : {binary.PadLeft(8, '0')}");
+            binary = Convert.ToString(~x, 2); // 비트의 반대 0 -> 1, 1 -> 0
+            Console.WriteLine($"8비트 : {binary.PadLeft(8, '0')}");
 
-            //int value = 4; // 0100
-            //string binary = Convert.ToString(value << 1, 2);
+            int value = 4; // 0100
+            string binary1 = Convert.ToString(value << 1, 2);
 
             // << >>
-            //Console.WriteLine($"8비트 : {binary.PadLeft(8, '0')}");
-            //binary = Convert.ToString(value >> 1, 2);
-            //Console.WriteLine($"8비트 : {binary.PadLeft(8, '0')}");
+            Console.WriteLine($"8비트 : {binary1.PadLeft(8, '0')}");
+            binary = Convert.ToString(value >> 1, 2);
+            Console.WriteLine($"8비트 : {binary1.PadLeft(8, '0')}");
 
 
             // 인벤토리 코드
