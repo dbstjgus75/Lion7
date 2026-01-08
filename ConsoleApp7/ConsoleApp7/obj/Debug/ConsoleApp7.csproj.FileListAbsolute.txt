@@ -1,0 +1,7 @@
+C:\Github\Lion7\ConsoleApp7\ConsoleApp7\bin\Debug\ConsoleApp7.exe.config
+C:\Github\Lion7\ConsoleApp7\ConsoleApp7\bin\Debug\ConsoleApp7.exe
+C:\Github\Lion7\ConsoleApp7\ConsoleApp7\bin\Debug\ConsoleApp7.pdb
+C:\Github\Lion7\ConsoleApp7\ConsoleApp7\obj\Debug\ConsoleApp7.csproj.AssemblyReference.cache
+C:\Github\Lion7\ConsoleApp7\ConsoleApp7\obj\Debug\ConsoleApp7.csproj.CoreCompileInputs.cache
+C:\Github\Lion7\ConsoleApp7\ConsoleApp7\obj\Debug\ConsoleApp7.exe
+C:\Github\Lion7\ConsoleApp7\ConsoleApp7\obj\Debug\ConsoleApp7.pdb
