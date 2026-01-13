@@ -1,0 +1,7 @@
+C:\Github\Lion7\0113_project\0113_project\bin\Debug\0113_project.exe.config
+C:\Github\Lion7\0113_project\0113_project\bin\Debug\0113_project.exe
+C:\Github\Lion7\0113_project\0113_project\bin\Debug\0113_project.pdb
+C:\Github\Lion7\0113_project\0113_project\obj\Debug\0113_project.csproj.AssemblyReference.cache
+C:\Github\Lion7\0113_project\0113_project\obj\Debug\0113_project.csproj.CoreCompileInputs.cache
+C:\Github\Lion7\0113_project\0113_project\obj\Debug\0113_project.exe
+C:\Github\Lion7\0113_project\0113_project\obj\Debug\0113_project.pdb

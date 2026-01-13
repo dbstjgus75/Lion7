@@ -14,6 +14,8 @@ namespace Undertale
             Console.OutputEncoding = Encoding.UTF8;
             Console.SetWindowSize(130, 70);
 
+            
+            
             // @" " 안에 아스키 아트를 그대로 넣습니다.
             string sansAscii = @"
                                     @@@@@@@@@@@@@@@@@@@@@@@@                                      
@@ -93,7 +95,11 @@ namespace Undertale
             //Console.WriteLine(sansAscii);
 
 
-            int x = 0, y = 0;
+            
+
+
+
+            int x = 14, y = 6;
 
             ConsoleKeyInfo keyInfo; //키관련된 정보
 
@@ -104,12 +110,26 @@ namespace Undertale
             while (true)
             {
 
+                for (int frame = 0; frame < 5; frame++)
+                {
+                    ConsoleColor color = frame % 2 == 0 ? ConsoleColor.Blue : ConsoleColor.Green;
+                    Console.ForegroundColor = color;
+
+                    Console.WriteLine("언더테일");
+                    Console.WriteLine("Enter를 누르면 시작 합니다!!");
+                }
+                Console.ResetColor();
+
+                keyInfo = Console.ReadKey(true);
+                if (ConsoleKey.Enter == keyInfo.Key) // Enter 클릭
+                {
+
+                }
 
                 Console.Clear(); // 화면 지우기
 
-                Console.SetCursorPosition(x, y); // 좌표
-                Console.Write("♥"); //현재 위치 출력
-
+                
+                Console.SetCursorPosition(0, 0); // 네모 가로 : 32 높이 14
                 Console.WriteLine("┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓");
                 Console.WriteLine("┃                              ┃");
                 Console.WriteLine("┃                              ┃");
@@ -125,6 +145,11 @@ namespace Undertale
                 Console.WriteLine("┃                              ┃");
                 Console.WriteLine("┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛");
 
+                const int MIN_X = 0;
+                const int MAX_X = 34;
+                const int MIN_Y = 0;
+                const int MAX_Y = 16;
+
 
                 keyInfo = Console.ReadKey(true); //키 입력 받기 (화면 출력 x)
 
@@ -132,29 +157,30 @@ namespace Undertale
                 switch (keyInfo.Key)
                 {
                     case ConsoleKey.UpArrow:
-                        if (y > 0)
+                        if (y > MIN_Y)
                             y--;
                         break;
                     case ConsoleKey.DownArrow:
-                        if (y < Console.WindowHeight - 1)
+                        if (y < MAX_Y)
                             y++;
                         break;
                     case ConsoleKey.LeftArrow:
-                        if (x > 0)
+                        if (x > MIN_X)
                             x--;
                         break;
                     case ConsoleKey.RightArrow:
-                        if (x < Console.WindowWidth - 1)
+                        if (x < MAX_X)
                             x++;
                         break;
                     case ConsoleKey.Spacebar:
                         Console.Write("미사일키"); break;
                     case ConsoleKey.Escape: break; //ESC키로 탈출
                 }
+
+                Console.SetCursorPosition(x, y); // 좌표
+                Console.Write("♥"); //현재 위치 출력
             }
 
-
-        
         }
     }
 }
