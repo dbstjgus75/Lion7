@@ -1,0 +1,8 @@
+C:\Github\Lion7\0114_shootGame\0114_shootGame\bin\Debug\0114_shootGame.exe.config
+C:\Github\Lion7\0114_shootGame\0114_shootGame\bin\Debug\0114_shootGame.exe
+C:\Github\Lion7\0114_shootGame\0114_shootGame\bin\Debug\0114_shootGame.pdb
+C:\Github\Lion7\0114_shootGame\0114_shootGame\obj\Debug\0114_shootGame.csproj.AssemblyReference.cache
+C:\Github\Lion7\0114_shootGame\0114_shootGame\obj\Debug\0114_shootGame.csproj.CoreCompileInputs.cache
+C:\Github\Lion7\0114_shootGame\0114_shootGame\obj\Debug\0114_shootGame.exe
+C:\Github\Lion7\0114_shootGame\0114_shootGame\obj\Debug\0114_shootGame.pdb
+C:\Github\Lion7\0114_shootGame\0114_shootGame\obj\Debug\0114_shootGame.exe.config

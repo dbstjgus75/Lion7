@@ -1,0 +1,8 @@
+C:\Github\Lion7\상속\상속\bin\Debug\상속.exe.config
+C:\Github\Lion7\상속\상속\bin\Debug\상속.exe
+C:\Github\Lion7\상속\상속\bin\Debug\상속.pdb
+C:\Github\Lion7\상속\상속\obj\Debug\상속.csproj.AssemblyReference.cache
+C:\Github\Lion7\상속\상속\obj\Debug\상속.csproj.CoreCompileInputs.cache
+C:\Github\Lion7\상속\상속\obj\Debug\상속.exe
+C:\Github\Lion7\상속\상속\obj\Debug\상속.pdb
+C:\Github\Lion7\상속\상속\obj\Debug\상속.exe.config

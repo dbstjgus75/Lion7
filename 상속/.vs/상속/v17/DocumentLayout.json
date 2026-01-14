@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Github\\Lion7\\\uC0C1\uC18D\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A5276A48-A7D1-4F34-971E-D05C956F4E53}|\uC0C1\uC18D\\\uC0C1\uC18D.csproj|c:\\github\\lion7\\\uC0C1\uC18D\\\uC0C1\uC18D\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5276A48-A7D1-4F34-971E-D05C956F4E53}|\uC0C1\uC18D\\\uC0C1\uC18D.csproj|solutionrelative:\uC0C1\uC18D\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Github\\Lion7\\\uC0C1\uC18D\\\uC0C1\uC18D\\Program.cs",
+              "RelativeDocumentMoniker": "\uC0C1\uC18D\\Program.cs",
+              "ToolTip": "C:\\Github\\Lion7\\\uC0C1\uC18D\\\uC0C1\uC18D\\Program.cs",
+              "RelativeToolTip": "\uC0C1\uC18D\\Program.cs",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAuwHcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T04:15:27.91Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
