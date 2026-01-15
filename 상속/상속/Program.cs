@@ -112,6 +112,97 @@ namespace 상속
     //Animal 부모 클래스와 다양한 동물 자식 클래스를 만들고,
     //다형성으로 관리하세요.
 
+    class Animal
+    {
+        //필드
+        protected string name; // 동물 닉네임
+        protected int age; // 동물 나이
+        protected string type; // 동물 종류
+        protected string habitat; // 서식지
+        protected double weight; // 동물 몸무게
+        protected double height; // 동물 키
+        protected string sound; // 동물 울음소리
+
+        // 생성자
+        public Animal(string name)
+        {
+            this.name = name;
+            type = "알 수 없음";
+            habitat = "알 수 없음";
+            weight = 0.0;
+            height = 0;
+            sound = "소리 없음";
+        }
+
+        // 메서드
+        public virtual void MakeSound()
+        {
+            Console.WriteLine($"{name}이(가) {sound} 소리를 냅니다.");
+        }
+
+        public virtual void ShowInfo()
+        {
+            Console.WriteLine($"이름: {name}");
+            Console.WriteLine($"나이: {age}살");
+            Console.WriteLine($"종류: {type}");
+            Console.WriteLine($"서식지: {habitat}");
+            Console.WriteLine($"몸무게: {weight}kg");
+            Console.WriteLine($"키: {height}m");
+        }
+
+    }
+
+    class Lion : Animal
+    {
+        public Lion(string name) : base(name)
+        {
+            type = "사자";
+            habitat = "사바나";
+            sound = "어흥";
+            age = 5;
+            weight = 190.5;
+            height = 1.2;
+        }
+        public override void MakeSound()
+        {
+            Console.WriteLine($"{name}이(가) {sound} 소리를 냅니다. (사자의 포효!)");
+        }
+    }
+
+    class  Wolf: Animal
+    {
+        public Wolf(string name) : base(name)
+        {
+            type = "늑대";
+            habitat = "초원";
+            sound = "멍멍";
+            age = 9;
+            weight = 30.5;
+            height = 0.5;
+        }
+        public override void MakeSound()
+        {
+            Console.WriteLine($"{name}이(가) {sound} 소리를 냅니다. (늑대의 포효!)");
+        }
+    }
+
+    class Bear : Animal
+    {
+        public Bear(string name) : base(name)
+        {
+            type = "곰";
+            habitat = "숲";
+            sound = "크르릉";
+            age = 2;
+            weight = 230.5;
+            height = 2.0;
+        }
+        public override void MakeSound()
+        {
+            Console.WriteLine($"{name}이(가) {sound} 소리를 냅니다. (곰의 포효!)");
+        }
+    }
+
 
     //문제 2: 상점 시스템
 
@@ -120,8 +211,103 @@ namespace 상속
 
     internal class Program
     {
+
+        public static void AnimalTypeInfo()
+        {
+            Console.WriteLine("=== 동물 정보 보기 선택 ===");
+            Console.WriteLine("1. 사자");
+            Console.WriteLine("2. 늑대");
+            Console.WriteLine("3. 곰");
+            Console.Write("동물 타입을 선택하세요(나가기 : 0): ");
+
+        }
+
+
         static void Main(string[] args)
         {
+
+            Animal animal = new Animal("동물");
+
+            Animal lion = new Lion("라이언");
+            Animal wolf = new Wolf("울프");
+            Animal bear = new Bear("베어");
+
+            while (true)
+            {
+                Console.Clear();
+
+                Console.WriteLine("동물원에 오신것을 환영합니다!!!");
+                Console.WriteLine("1. 동물 정보 보기");
+                Console.WriteLine("2. 동물 소리 듣기");
+                Console.WriteLine("3. 종료");
+                Console.Write("번호를 입력 하세요 : ");
+
+                int input = int.Parse(Console.ReadLine()); // 입력한 값
+
+                int animalType = -1; // 입력한 타입
+
+                Console.Clear();
+
+                if (input == 1)
+                {
+                    while (true)
+                    {
+                        AnimalTypeInfo();
+                        animalType = int.Parse(Console.ReadLine());
+
+                        if (animalType == 0)
+                            break;
+
+                        switch (animalType)
+                        {
+                            case 1:
+                                lion.ShowInfo();
+                                break;
+                            case 2:
+                                wolf.ShowInfo();
+                                break;
+                            case 3:
+                                bear.ShowInfo();
+                                break;
+                        }
+
+                    }
+                }
+                else if (input == 2)
+                {
+                    while (true)
+                    {
+                        AnimalTypeInfo();
+                        animalType = int.Parse(Console.ReadLine());
+
+                        if (animalType == 0)
+                            break;
+
+                        switch (animalType)
+                        {
+                            case 1:
+                                lion.MakeSound();
+                                break;
+                            case 2:
+                                wolf.MakeSound();
+                                break;
+                            case 3:
+                                bear.MakeSound();
+                                break;
+                        }
+
+                    }
+                }
+                else
+                {
+                    break;
+                }
+
+
+
+
+            }
+
             //Character character = new Character();
             //character.Render(); // 캐릭터
 
@@ -139,7 +325,7 @@ namespace 상속
 
             //character.Render();
             //warrior.Render();
-            
+
             //Character character = new Warrior(); // 업캐스팅
 
             //if (character is Warrior)

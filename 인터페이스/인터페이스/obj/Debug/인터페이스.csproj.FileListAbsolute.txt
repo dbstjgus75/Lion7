@@ -1,0 +1,8 @@
+C:\github\Lion7\인터페이스\인터페이스\bin\Debug\인터페이스.exe.config
+C:\github\Lion7\인터페이스\인터페이스\bin\Debug\인터페이스.exe
+C:\github\Lion7\인터페이스\인터페이스\bin\Debug\인터페이스.pdb
+C:\github\Lion7\인터페이스\인터페이스\obj\Debug\인터페이스.csproj.AssemblyReference.cache
+C:\github\Lion7\인터페이스\인터페이스\obj\Debug\인터페이스.csproj.CoreCompileInputs.cache
+C:\github\Lion7\인터페이스\인터페이스\obj\Debug\인터페이스.exe
+C:\github\Lion7\인터페이스\인터페이스\obj\Debug\인터페이스.pdb
+C:\github\Lion7\인터페이스\인터페이스\obj\Debug\인터페이스.exe.config
